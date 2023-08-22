@@ -57,7 +57,7 @@ runs:
       if: ${{ !steps.ping-playground.outputs.IS_PLAYGROUND_RUNNING }}
       shell: bash
     - name: Cypress run
-      uses: cypress-io/github-action@v4
+      uses: cypress-io/github-action@v6
       with:
         working-directory: cypress-action
         spec: cypress/e2e/e2e/**/*
